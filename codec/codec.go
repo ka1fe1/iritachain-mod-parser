@@ -1,7 +1,6 @@
 package codec
 
 import (
-	"github.com/bianjieai/spartan-cosmos/module/node"
 	amino "github.com/cosmos/cosmos-sdk/codec"
 	types2 "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/simapp/params"
@@ -18,7 +17,6 @@ func MakeEncodingConfig() {
 	interfaceRegistry := types2.NewInterfaceRegistry()
 	marshaler := amino.NewProtoCodec(interfaceRegistry)
 
-	node.RegisterInterfaces(interfaceRegistry)
 	encodingConfig := params.EncodingConfig{
 		InterfaceRegistry: interfaceRegistry,
 		Marshaler:         marshaler,

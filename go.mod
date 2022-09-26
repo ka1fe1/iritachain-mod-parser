@@ -4,8 +4,6 @@ go 1.16
 
 require (
 	github.com/bianjieai/irita v0.1.1-rc1.0.20220809071819-204fd6357364
-	github.com/bianjieai/spartan-cosmos v1.0.2
-	github.com/bianjieai/tibc-go v0.3.1-0.20220412124234-9b75094ff868
 	github.com/cosmos/cosmos-sdk v0.45.5-0.20220523154235-2921a1c3c918
 	github.com/kaifei-bianjie/common-parser v0.0.0-20220923023138-65dfc81a8ff5
 	github.com/stretchr/testify v1.7.5
